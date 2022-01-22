@@ -12,11 +12,7 @@ class Solution:
                 freq[i] = 1
         
         for i in range(1, N+1):
-            if i in freq:
-                arr[i-1] = freq[i]
-            else:
-                arr[i-1] = 0
-
+            arr[i-1] = freq[i] if i in freq else 0
 
 
 #{ 
