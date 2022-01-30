@@ -4,6 +4,6 @@ class Solution:
         res = 0
         lnt = len(nums)
         for i in range(lnt):
-            res += ((i+1)-nums[i])
+            res ^= (i+1)^(nums[i])
             
         return res
