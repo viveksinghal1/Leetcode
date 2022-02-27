@@ -4,6 +4,9 @@ class Solution:
         
         n = len(nums)
         
+        # not using range function here in iteration because range updates i/j one by one
+        # and i/j doesn't get changed by duplicates checking loops
+        
         nums.sort()
         i = 0
         while i < n:
